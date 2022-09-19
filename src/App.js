@@ -12,11 +12,11 @@ import {
 function App() {
   return (
     <div className="App">
+        <TopBar />
       <Router>
       <Routes>
-      <TopBar />
-     <Route path='/country' element={<Country />} />
-      <Fetch />
+     <Route path='/country/:Name' element={<Country />} />
+     <Route path='/' element={ <Fetch />} />
       </Routes>
       </Router>
     </div>

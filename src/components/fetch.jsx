@@ -15,14 +15,14 @@ const [loading, setLoading] = useState(true)
             setData(result);
             setLoading(false)
           //   console.log(result)
-          // console.log(data);
+        console.log(data);
           },
           (error) => {
             setError(error);
             setLoading(false)
             console.log(error.message);
           }
-        ); }, [data]);      
+        ); }, []);      
 
   return (
     <>
